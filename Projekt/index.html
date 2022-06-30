@@ -1,0 +1,595 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+	<title>Project X</title>
+	<link rel="stylesheet" href="style/style.css" type="text/css" />
+	<meta charset="UTF-8">
+	
+</head>
+<body onload="onLoad()">
+	
+	<div id="window">
+		<div id="header" style="background-color: ;">
+			<canvas id="top"></canvas>
+			
+			<img onmouseover="buttonChange(this)" onmouseout="clearButton(this)" id="x" onclick="deletex()" style="right:2px;  top: 2px;" class="button" src="style/x.bmp">
+			<img onmouseover="buttonChange(this)" onmouseout="clearButton(this)" id="max" style="right:28px; top: 2px;" class="button" src="style/max.bmp">
+			<img onmouseover="buttonChange(this)" onmouseout="clearButton(this)" id="min" onclick='showWindow("0")' style="right:48px; top: 2px;" class="button" src="style/min.bmp">
+			<img style="left:4px;   top: 4px; position: absolute;" src="style/px.png">
+			
+		</div>
+		
+		<div id="toolTip">
+			
+			<div id="opction">
+				
+				<div class="leftThing" style="height: 22px; width: 0px; left: 2px; top: 2px;"></div>
+				
+				<span class="hover" style="position: absolute; top: 4px; left: 6px; text-decoration: underline;">F</span>
+				<span class="hover" style="position: absolute; top: 4px; left: 15px;">ile</span>
+				
+				<span class="hover" style="position: absolute; top: 4px; left: 50px; text-decoration: underline;">E</span>
+				<span class="hover" style="position: absolute; top: 4px; left: 59px;">dit</span>
+				
+				<span class="hover" style="position: absolute; top: 4px; left: 94px; text-decoration: underline;">V</span>
+				<span class="hover" style="position: absolute; top: 4px; left: 104px;">iew</span>
+				
+				<span class="hover"style="position: absolute; top: 4px; left: 140px; text-decoration: underline;">G</span>
+				<span class="hover" style="position: absolute; top: 4px; left: 150px;">o</span>
+				
+				<span class="hover" style="position: absolute; top: 4px; left: 164px;">F</span>
+				<span class="hover" style="position: absolute; top: 4px; left: 174px; text-decoration: underline;">a</span>
+				<span class="hover" style="position: absolute; top: 4px; left: 183px;">vorites</span>
+				
+				<span class="hover" style="position: absolute; top: 4px; left: 257px; text-decoration: underline;">H</span>
+				<span class="hover" style="position: absolute; top: 4px; left: 267px;">elp</span>
+				
+			</div>
+			
+			<div id="seachEngine">
+				
+				<div class="leftThing" style="height: 22px; width: 0px; left: 2px; top: 2px;"></div>
+				
+				<span style="position: absolute; top: 5px; left: 6px; ">Adress</span>
+				
+				<select class="hover" style="position: absolute; width:calc(70vw - 73px); left: 68px; top: 4px;" onchange="change(this)">
+					<option value="1">Wstęp</option>
+					<option value="2">Procesor</option>
+					<option value="3">Urządzenia Peryferyjne</option>
+					<option value="4">Magistrala</option>
+					<option value="5">Płyta Główna</option>
+					<option value="6">BIOS</option>
+					
+					
+				</select>
+				
+			</div>
+			
+			
+			
+		</div>
+				
+		<div id="frame1">
+			
+			<center style="font-size: 64px; ">
+				Wstęp
+			</center>
+			
+			<span>
+				<br/>
+				
+				<span class="bold">
+					Komputer to jednosta centralna wraz z urządzeniami zewnętrznymi
+					(wejsćia-wyjścia)
+				</span>
+				
+				<br/><br/>
+				<div style="background-color: Khaki; padding: 5px;  border: 1px solid darkorange; border-left: 10px solid darkorange;">
+					<span>
+					W języku potocznym często używa się określenia "jednostka centralna" w odniesieniu do obudowy
+					komputera z całą jej zawartością.
+					Jednak pojęcie ściśle informiatycznie odnosi się do procesora
+					wraz z pamięcią operacyjną
+					</span>
+				</div>
+				<br/><br/>
+				
+				<span class="bold">
+					Pamięc operacyjna
+				</span>
+				służy do chwilowego przechowywania danyh wejściowych i wyjściowych.
+				W niej przechowuje się uruchomione programy.
+				Programy przekazują rozkazy do procesora.
+				We współczesnych komputerach funkcję pamięci operacyjnej spełnia pamięć
+				RAM (ang. <span class="bold">Random Access Memory</span>).
+				Jest to pamięć o dostępie swobodnym, co oznacza,
+				że możezapisywać dane do komórek pamięci, odczytywać je orazkasować.
+				Należy pamiętać, że dane w pamięci RAM zostaną skasowane po wyłączeniu zasilania pamięci.
+				
+			</span>
+			
+		</div>
+		<div id="frame2">
+		
+			<img src="style/procesor.jpg" width=200 height=200 style="float: left;">
+			
+			<div style="float:left; position: relative;">
+				<span style=" font-size: 64px; margin-top: 50px; position: absolute; left: calc((70vw - 133px - 200px - 317.25px)/2);">
+					Procesor
+				</span>
+			</div>
+			
+			<div style="clear: both;"></div>
+			
+			<span>
+				<br/>
+				<div style="background-color:violet; padding: 5px;  border: 1px solid purple;border-left: 10px solid purple;">
+					<span>
+					<span class="bold">
+					Procesor
+					</span>
+					(
+					<span class="bold">CPU</span>, ang.
+					<span class="bold">central processing unit </span>
+					- centralna jednostka wykonawcza)
+					to układ scalony,
+					którego działanie polega na wykonywaniu insctukcji programów.
+					Nadzoruje i synchronizuje pracę wszystkich urząceń w komputerze
+					</span>
+				</div>
+				<br /><br />
+				
+				Współczesne procesy to układy o
+				<span class="bold">bardzo dużej skali integracji VLSI</span>
+				(ang. <span class="bold">Very Large Scale of Integration</span>),
+				co oznacza że procesor składa się z bardzo dużej liczby elementów podstawowych, którymi są tranzystory.
+				Dla przykłądu, procesor Intel Core i7 jest zbudowany z około 730 milionów tranzystatorów z technologii 32nm.
+				
+				<br/>
+				
+				<ul>
+					<li>
+						(1nm = 10<sup>-9</sup>m = 0.000 000 001m)
+					</li>
+					<li>
+						Koszt wytworzenie jednego tranzystatora we współczesnym mikroprocesorze to za ledwie jedna milionowa
+					    tranzystora z roku 1968 roku. Gdyby wszystko tak taniało...
+					</li>
+					<li>
+						W średnicy ludzkiego włosa można zmieścić prawie 2000 tranzystatorów 32-nanometrowych,
+						a na głowie szpilki - ponad 30 milionów.
+					</li>
+					<li>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						Morbi quis malesuada erat, ac ullamcorper dui.
+						Maecenas ultricies lobortis dui. Nulla.
+					</li>
+					<li>
+						Tranzystor 32-nanometrowy może łączyć się i wyłączyć około 300 miliardów razy na sekundę.
+						W czasie, który zamuje włączenie i wyłączcenie tranzystatora, wiązka śwoatła przebywa odległość
+						mniej niż ćwierśc centymetra.
+					</li>
+				</ul>
+				
+				<div style="border-top: 2px dotted black; padding-top: 10px;">
+				W każdym procesorze można wyróżnić kolka zasadniczych modułów.
+				Są one podpowiedzialne za przepływ danych oraz instrukcji w procesorze.
+				Do najważniejszych modułów zaliczamy:
+				</div>
+				<br/><br/>
+				
+				<ul>
+					<li>
+						<span class="bold">moduł wstępnego pobierania i dekodowania instrukji</span>
+						, ktróy jest odpowiedzialny za dostarczenie kolejnych poleceń z pamięci operacyjnej i przeazanie ich do odpowiedniej jednostki wykonawczej;
+					</li>
+					<li>
+						<span class="bold">główny moduł wykonawczy</span>
+						, który jest jednoostką arytmetyczno-logiczną ALU
+						(ang. <span class="bold">Arithmetic Logic Unit</span>)
+						odpowiedzialny jest za przetwarzanie danych stałopozycyjnych(całkowitych).
+						Ma niewielką pamięć, nazywaną zestawem rejestrów. Każdy rejestr to pojedyncza komórka używana do chwiloego przechowywania danych i wyników.
+						Natomiast FPU (ang.
+						<span class="bold">Floating Point Unit</span>
+						- koprocesor numeryczny) wykonuje wszystkie obliczenia zmiennoprzecinkowe.
+						Kiedyś koprocesory były osobnymi układanie elektronicznymi.
+						Od momentu pojawienia się procesora 486DX zaczeto je montować w jednej strukturze wraz z procesorem.
+					</li>
+					<li>
+						<span class="bold">moduł wyjściowy procesora</span>
+						, który jest odpowiedzialny za przekierowanie danych będących wynikiem obliczeń od odpowiedniego adresu w pamięci operacyjnej lub urządzenia wyjścia.
+					</li>
+				</ul>
+				
+				<div style="border-top: 2px dotted black; padding-top: 10px;">
+					Procesory możęmy podzielić ze względu na długosć słowa, na którym wykonywane jś operacje obliczeniowe.
+					Pozróżniamy więc naztępujące procesory:
+				</div>
+				
+				<br />
+				
+				<div style="border: 1px solid black; width: clac(70vw - 46px);">
+					<div class="row">
+						<div class="table1">
+							Długość Słowa
+						</div>
+						<div class="table2" style="text-align: center;">
+							Przykładowe procesory firmt Intel
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="table1">
+							4-bitowe
+						</div>
+						<div class="table2">
+							4004 (1971 r.)
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="table1">
+							8-bitowe
+						</div>
+						<div class="table2">
+							8008 oraz 8080 (1972 r.)
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="table1">
+							16-bitowe
+						</div>
+						<div class="table2">
+							8088 (1979 r.), 80286 (1982 r.), 80386SX(1985 r.)
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="table1">
+							32-bitowe
+						</div>
+						<div class="table2">
+							80486 (1989 r.), Pentium 60/66MHz (1993 r.), Pentium II, Pentium III
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="table1">
+							64-bitowe
+						</div>
+						<div class="table2">
+							Intel Xeon (2005 r.)
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="table1" style="border: 0px solid black">
+							128-bitowe
+						</div>
+						<div class="table2" style="border-bottom: 0px solid black">
+							Jeszcze nieinstalowany jako CPU w zastosowaniach cywilnych
+						</div>
+					</div>
+					<div style="clear: both;"></div>
+				</div>
+				
+				<br /><br />
+				
+				Obecnie w jednostkach centralnych montowane są procesory 32- lub 64-bitowe.
+				
+				<br /><br />
+				
+				Decyzja o wyborze procesora pociąga za sobą decyzję o wyborze płyty głównej, która pozwala na opymalne wykorzystanie możliwości procesora.
+				
+				<br /><br />
+				
+			</span>
+		
+		</div>
+		
+		<div id="frame3">
+			
+			<center style="font-size: 64px;">
+				Urządzenia Peryferyjne
+			</center>
+			
+			<span>
+				<br />
+				
+				Pozostałe elementy komputera to tzw.
+				<span class="bold">urządzenia peryferyjne</span>
+				(zewnętrzne).
+				Ich funkcją jest dostarczanie informacji (danych, rozkazów) do jednostki centralnej
+				lub odbieranie z niej informacji.
+				
+				<br/><br/>
+				
+				Wyróżniamy następujące grupy urządzeń peryferyjnych (zewnętrznych):
+				<ul>
+					<li>
+						urządzenia wejściowe, na przykłąd klawiatura, mysz, skaner,
+					</li>
+					<li>
+						urządzenia wyjściowe, na przykład monitor ekranowy, drukarka, ploter, głośnik,
+					</li>
+					<li>
+						urządzenia wejścia-wyjścia, na przykład modem, dysk twardy.
+					</li>
+				</ul>
+				
+				Wszystkie elementy komputera są osadzone na płycie głównej komputera liz z nią połączone.
+				Część elementów komputera podczas pracy wydziela dużo ciepa.
+				Aby ich praca przebiegała prawidłowo, należy zadbać o prawidłową temperaturę.
+				Do tego celu służą wszelkiego rodzaju radiatory, wentylatory oraz zaawansowane układy chłodzenia cieczą.
+				To dlatego tak łatwo ożna zlokalizować procesor. Jest on schowany pod największym radiatorem, na których osadzony jest sprej wielkości wentylator.
+				
+				<br/><br/>
+				
+			</span>
+			
+			<center>
+				<img src="style/budowa.jpg"/>
+			</center>
+			
+		</div>
+		
+		<div id="frame4">
+			
+			<img src="style/magistrala.jpg" width=300 height=160 style="float: left;">
+			
+			<div style="float:left; position: relative;">
+				<span style=" font-size: 64px; margin-top: 30px; position: absolute; left: calc((70vw - 133px - 300px - 317.25px)/2);">
+					Magistrala
+				</span>
+			</div>
+			
+			<div style="clear: both;"></div>
+			
+			<span>
+				
+				<br />
+				
+				O jakości i możliwości płyty głównej decydują jej 2 główne lelementy:
+				<span class="bold">mostek północny (northbridge)</span>
+				oraz
+				<span class="bold">mostek południowy (southbridge)</span>
+				. Są to kluczowe elementy płyty głównej,
+				które decydują między innymi o rodzaju magistrali.
+				<span class="bold">Magistarala</span>
+				to określenie, które często pojawia się w specyfikacjach wielu komputerowych komponentów,
+				takich jak: procesory, płyty główne, karty graficznej, pamięci flash czy urządzenia sieciowe.
+				<br/>
+				Czym zatem jest i do czego służy magistala?
+				
+				<br/><br/>
+				
+				<div style="background-color:violet; padding: 5px;  border: 1px solid purple;border-left: 10px solid purple;">
+					<span class="bold">Magistrala</span> (ang. <span class="bold">bus</span>),
+					potocznie zwana <span class="bold">szyną systematyczną</span>
+					, służy do przekazywania danych, adresów czy instrukcji sterujących w różne mejsca komputera.
+					Przekazywanie informacji może być realizowane na dwa sposoby.
+					Gdy informacje są przesyłane jednocześnie, mamy doczynienia z
+					<span class="bold">magistralą równoległą</span>
+					, gdy zaś przesywałnie odbywa się po kolei, jedna informacja za drugą - z
+					<span class="bold">magistralą szeregową</span>.
+				</div>
+				
+				<br/><br/>
+				
+				W komputerach montowane są magistrale różnego rodzaju.
+				Najszybsza w systenie jest
+				<span class="bold"> magistrala procesora</span>
+				, zwana główną.
+				Pośtedniczy w przesyłaniu danych między procesorem (CPU) a pamięczią operacyjną (RAM).
+				Wszystkie magistrale są ze sobą połączone hierarchicznie, a hierarhia ta wiąże się przede wszystkim z szybkością ich pracy
+				(wolniejsza zawsze podłączona jest do szybszej).
+				
+				<br/><br/>
+				
+				Kolejne w hieriarchii są magistrale lokalne, łączące system z kartami rozszerzeń (karta graficzna, dźwiękowa, sieciowa...).
+				Do tej grupy zalicza się mięczy innymi magistrale:
+				PCI, AGP i PCI Express.
+				Jeszcze niżej znajdują się magistrale <span class="bold">wejścia-wyjścia</span>, nazywane różnież
+				<span class="bold">peryferyjnymi</span> (ang. <span class="bold">peripheral bus</span>)
+				lub <span class="bold"> magistralami wejścia-wyjścia</span> (I/O).
+				Służą one, podobnie jak lokalne, do podłączenia urządzeń peryferyjnych wymagających wolniejszej komunikacji, takich jak:
+				napędy dysków, porty USB, porty szeregowe i równoległe oraz PS/2
+				(por wykorzystywany do połączenia klawiatury i myszki).
+				
+				<br/><br/>
+				
+				Obecnie zarówno procesy, jak i magistrale główne są 64-bitowe.
+				Dostosowane je również do współpracy z procesorami dwu- i czterordzeniowymi, takimi jak Intel Core 2 Duo, Core 2 Quad czy serwerowy Xen z serii E5000.
+				Niemniej jednak historia magistrali systemowej dobiga powoli końca.
+				W procesorach Nehalem pojawił się nowy interfejs komunikacji, oparty na połączeniach punkt-punkt.
+				
+				
+				
+			</span>
+			
+		</div>
+		
+		<div id="frame5">
+			
+			<img src="style/plyta.jpg" width=200 height=200 style="float: left;">
+			
+			<div style="float:left; position: relative;">
+				<span style=" font-size: 64px; margin-top: 50px; position: absolute; left: calc((70vw - 133px - 200px - 317.25px)/2);">
+					Płyta Główna
+				</span>
+			</div>
+			
+			<div style="clear: both;"></div>
+			
+			<span>
+				
+				<br/>
+				
+				<span class="bold">Mostek północny</span> ma znaczący wpływ na wydajność systemu.
+				Ogreśla szybkość, z jaką [?] mogę płynąć pomiędzy procesorem, pamięcią operacyjną i podsystemem graficznym.
+				
+				<br/><br/>
+				
+				Mostek północny komunikuje się również z wolniejszym
+				<span class="bold">mostkiem południowym</span> [?]
+				jest odpowiedzialny za obsługę wolniejszych magistrali kominukujących się z [?]
+				urządzeniami poprzez:
+				
+				<br/><br/>
+				
+				<ul>
+					<li>
+						złącza <span class="bold">Serial ATA</span> (w sktócie: <span class="bold">SATA</span> - ang. <span class="bold">Serial Advanced Technology Attachment</span>)
+						- szeregowa magistrala umożliwiająca podłączenie szybszych dysków twardych [?] napędów optycznych.
+						Obecnie w sprzedaży dostępne są dyski z kontrolerem wyposażonym w magistralę SATA3,
+						która umożliwia transfer z prędkością 6 giga bitów na sekundę;
+					</li>
+					<li>
+						złącza <span class="bold">AT-BUS</span>(w skrócie <span class="bold">ATA</span> - ang. <span class="bold">Advanced Technologi Attachment</span>) - przestarzały,
+						wychodzący obecnie z użycia interfejs, przeznaczony do komunikacji z dyskami twardymi poprzez magistralę równoległą.
+						Standard ATA nie jest już rozwijany w kierunku zwiększenia szybkości transmisji;
+					</li>
+					<li>
+						magistralę <span class="bold">PCI</span> (ang. <span class="bold">Peripheril Component Interconnect</span>)
+						- magistrala komunikacyjna służąca do podłączenia urządzeń do płyty głównej
+						(karta graficzna, karta dźwiękowa, karta sieciowa, karta telewizyjna...);
+					</li>
+					<li>
+						porty <span class="bold">USB</span> (ang. <span class="bold">Universal Serial Bus</span>)
+						- uniwersalna magistrala szeregowa, rodzaj portu komunikacyjnego kompóterów z pamięcią flash, dyskami twardymi, drukarkami, klawiaturą, skanerem i innymi urządeniami;
+					</li>
+					<li>
+						gniazda <span class="bold">PS/2</span> - port komunikacyjny opracowany przez firmę IBM.
+						Jest on odmiana portu szeregowego przeznaczonego do podłączania klawiatury i myszki;
+					</li>
+					<li>
+						gniazda <span class="bold">LPT</span> - port równoległy wykorzystywany do podłączenia urządzeń peryferyjnych,
+						takich jak drukarki, skanery, plotery. Obecnie porty te są wypierane przez porty USB.
+					</li>
+				</ul>
+				
+				<br /><br />
+				
+				Mostek południowy jest odpowiedzialny również za komunikację z BIOS-em oraz za obsługę karty dźwiękowej zainstalowanej na płycie głównej.
+				
+				<br /><br />
+				
+				Obecnie wraz z pojawieniem się procesorów Intel Core i7 nastąpiły pewne zmiany w funkcjach, jakie pełnią procesor oraz mostek północny.
+				Po przeniesieniu kontrole[?] pamięc z mostka północnego do procesora mostek północny odpowiada tylko za komunikację pomiędzy mostkiem pułudniowym a procesorem oraz obsłuę magisrtali PCI Express dla kart graficznych.
+				Line PCI Express x 1 dla pozostałych urządzeń obsługuje teraz mostek południowy.
+				
+			</span>
+			
+		</div>
+		
+		<div id="frame6">
+			
+			<img src="style/bios.jpg" width=220 height=240 style="float: left;">
+			
+			<div style="float:left; position: relative;">
+				<span style=" font-size: 64px; margin-top: 55px; position: absolute; left: calc((70vw - 133px - 220px - 317.25px)/2);">
+					BIOS
+				</span>
+			</div>
+			
+			<div style="clear: both;"></div>
+			
+			<span>
+				
+				<br/>
+				
+				Proces uruchomienia komputera i jesgo przygotowania do pracy przebiega w kilku następujących po sobie etapach. Prześledźmy je i rozszyfrujmy niektóre informacje pojawiające się na ekranie monitora.
+				
+				<br/><br/>
+				
+				Bezpośredniu po włączeniu komputera uaktywniany jest BIOS.
+				
+				<br/><br/>
+				
+				<div style="background-color:violet; padding: 5px;  border: 1px solid purple;border-left: 10px solid purple;">
+					<span>
+					<span class="bold">
+					BIOS
+					</span>
+					(ang.
+					<span class="bold">Basic Input/Output System</span>)
+					- podstawowy system wejścia/wyjścia
+					
+					<br/><br/>
+					
+					BIOS to program zapisany w pamieci stałej na płycie głównej.
+					Zawiera zestaw podstawowych procedur pośredniczących pomiędzy ststemem operacyjnym a sprzętem.
+					
+					</span>
+				</div>
+				
+				<br /><br />
+				
+				Jest on uruchamiany jako pierwszy, przed systemem operacyjnym, w większości komputerów PC pełni 4 podstawowe funkcje:
+				
+				<br/><br/>
+				
+				<ol>
+					<li>
+						Procedura <span class="bold">POST</span> (ang. <span class="bold">OnSelfTest</span>) <span class="bold">wykonuje test poprawności</span>
+						działania podstawowych układów i podzespołów, między innymi karty graficznej, po skutkuje wyświetlemien komunikatu informującego o rodzaju karty graficznej.
+						Następnie testowane są: płyta główna, procesor, pamięć RAM, zainstalowane napędy HDD (dyski twarde), dyski optyczine (na przykład CD-ROM) oraz pozostałe komponenty komputera (tzw. urządzenia wejścia-wyjścia).
+						Jeśli któreś z testowanych urządzeń jest niepoprawne, procedura <span class="bold">POST</span> zatrzymuje pracę komputera i zwraca (w postaci kodu) informację rodzaju napotkanego błędu.
+						Rodzaj błędu jest sygnalizowany sekwencją odpowiednich dźwięków generowanych przez gośniczek systemowy lub w postaci odpowiedniego komunikatu na ekranie monitora, co pozwala na szybką lokalizację ewentualnego uszkodzenia komputera.
+					</li>
+					<li>
+						Program BIOS Setup <span class="bold">umożliwia konfigurację systemu</span>. Zazwyczaj wyświetlany jest zestaw menu, który pojawi się po wciśnięciu określonego klawisza w trakcie wykonywania procedury <span class="bold">POST</span>, (najczęściej <span class="bold">Del</span> albo <span class="bold">F2</span>).
+						Program BIOS Setup umożliwia konfigurację płyty głównej oraz takich parametrów jak: data, czas, hasła, parametry dysków twarych, definicje innych podstawowych ustawień systemowych.
+						Możliwa jest też konfiguracja ustawień związanych z funkcją zarządzania energią oraz określenie kolejności urządzeń, z których będzie wgrywany system operacyjny.
+						Zmiany te są zapisywanie w pamięci CMOS. Pamięć ta musi być cały czas zasilana (tąd też obecność baterii na płycie głównej).
+						Wyczerpanie się baterii lub skasowanie zawartości pamięci CMOS powoduje, że BIOS powraca do ustawień domyślnych, fabrycnych, które do czasu ponownego wprowadzenia poprawnych ustawień gwarantują pracę komputera, jednak jest ona wolniejsza i sam proces uruchamiania komputera trwa dłużej.
+					</li>
+					<li>
+						Jeżli precodura <span class="bold">POST</span> przebiegła bez żadnego problemu, <span class="bold">uruchamiany jest program rozruchowy</span> (ang. <span class="bold">boot loader</span>),
+						którego zadaniem jest odszukanie systemu operacyjnego i wczyranie go do pamięci operacyjnej.
+						System operacyjny może być wgrany z dysku twardego, z patedu optycznego, dyskietki, pamięci flash, a nawet poprzez sieć komputerową.
+						Proces poszukiwania systemu operacyjnego przebiewa w kolejności określonej w ustawieniach BIUS-u
+					</li>
+					<li>
+						BIOS <span class="bold">przydziela zasoby systemowe</span> urządzeniom, które tego wymagają.
+						Zasoby przydzielone przez BIOS są wykorzystywane przez system operacyjny.
+						Jednak obecnie to system operacyjny przejmuje późniejkontrolę nad przeydzielaniem zasobów systemowych odpowiedznim urządzeniom.
+					</li>
+				</ol>
+				
+				<div style="background-color: Khaki; padding: 5px;  border: 1px solid darkorange; border-left: 10px solid darkorange;">
+					<span>
+					W środku Windows często możemy spotkać z konfliktem sprzętowym wynikającym z tego, że dwa rządzenia odwołują się do tych samych zasobów sprzętowych
+					(na przykład do tego samego zakresu pamięci RAM), co prowadzi do destabilizacji pracy tych urządzeń.
+					</span>
+				</div>
+				
+				<br/><br/>
+				
+				BIOS ma już swoje lata i aż dziw bierze, że tak stare rozwiązanie nie doczekało się jeszcze następców. Choć nie od końca, Intel opracował bowiem coś, co w najbliższej  przyszłości powinno zastąpić BIOS.
+				Mowa tu o projekcie zapoczątkowanym przez firmę [?] - <span class="bold">UEFI</span> (ang. <span class="bold">Unified Extensible Firmware Interface</span>),
+				który zredukuje czas rozruchu komputera z kilkudziesięciu, do kilku sekund. Umożliwi to również obługę dysków większych niż 2 TB. Niektóre współczesne systemy operacyjne potrafią już wpółpracować z [?].
+				Należą do nich Vista oraz Windows 7 w wersjach 64-bitowych.
+				
+			</span>
+			
+		</div>
+		
+	</div>
+	
+	<div id="bottom">
+		<a href="https://forum.pasja-informatyki.pl/" target="_blank">
+			<img id="startButton" src="style/button.bmp">
+		</a>
+		<div style="top: 2px; left: 110px; height: 30px; border-width: 3px" class="leftThing"></div>
+		
+		<img style="position: absolute; top: 13px; left: 130px; cursor: pointer;" onclick='showWindow("1")' id="icon" src="style/px.png">
+	</div>
+	
+	
+</body>
+<script src="js/script.js"></script>
+</html>
+<!--Made by Bartosz Choma-->

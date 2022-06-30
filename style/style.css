@@ -1,0 +1,193 @@
+body{
+	
+	background-color: #01817F;
+	margin: 0px;
+	position: relative;
+	
+	font-family: "Courier New", Courier, monospace;
+	
+}
+
+#window{
+	
+	position: absolute;
+	
+	width: 70vw;
+	height: 75vh;
+	
+	background-color: #c3c3c3;
+	
+	top: 10vh;
+	left: calc(15vw - 4px);
+	
+	border-top: 2px solid white; 
+	border-left: 2px solid white; 
+	border-right: 2px solid black; 
+	border-bottom: 2px solid black;
+
+	padding: 2px;
+}
+
+#header, #top{
+	
+	background-color: #0000FF;
+	width: 70vw;
+	height: 25px;
+	
+	position: relative;
+	
+}
+
+.button{
+	
+	position: absolute;
+	
+	border-top: 2px solid white; 
+	border-left: 2px solid white; 
+	border-right: 2px solid black; 
+	border-bottom: 2px solid black;
+	
+	z-index: 7;
+}
+
+
+#toolTip{
+	
+	width: calc(70vw - 2px);
+	height: 59px;
+	
+	margin-top: 1px;
+	
+	border: 1px solid #868686;
+	
+	background-color: white;
+}
+
+#opction{
+	
+	height: 28px;
+	width: calc(70vw - 3px);
+	
+	border-bottom: 1px solid #868686;
+	
+	margin-left: 1px;
+	margin-top: 1px;
+	
+	background-color: #c3c3c3;
+	
+	position: relative;
+	
+}
+
+#seachEngine{
+	
+	height: 28px;
+	width: calc(70vw - 3px);
+	
+	margin-left: 1px;
+	margin-top: 1px;
+	
+	background-color: #c3c3c3;
+	
+	position: relative;
+}
+
+.leftThing{
+	
+	position: absolute;
+	
+	border-top: 1px solid white;
+	border-left: 1px solid white;
+	border-bottom: 1px solid #A5A5A5;
+	border-right: 1px solid #A5A5A5;
+	
+}
+
+#frame1, #frame2, #frame3, #frame4, #frame5, #frame6{
+	
+	width: calc(70vw - 46px);
+	height: calc(75vh - 133px);
+	
+	padding: 20px;
+	
+	margin-top: 5px;
+	
+	border-bottom: 1px solid white;
+	border-right: 1px solid white;
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+
+	overflow:auto;
+}
+
+#bottom{
+	
+	background-color: #c3c3c3;
+	position: absolute;
+	
+	top: calc(100vh - 47px);
+	
+	width: 100%;
+	height: 44px;
+	
+	border-top: 2px solid white;
+	
+	position: relative;
+}
+
+.table1, .table2{float: left;}
+
+.table1, .table2, .row{ height: 46px;}
+
+.table1{
+	
+	width: 25%;
+	border-bottom: 1px solid black;
+	text-align: center;
+	
+}
+
+.table2{
+	
+	width: calc(75% - 1px);
+	border-bottom: 1px solid black;
+	border-left: 1px solid black;
+}
+
+#startButton{
+	
+	border-top: 2px solid white; 
+	border-left: 2px solid white; 
+	border-right: 2px solid black; 
+	border-bottom: 2px solid black; 
+	
+	padding-right: 4px;
+	padding-left: 4px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	
+	margin-top: 2px;
+	margin-left: 5px;
+	
+}
+
+.hover:hover, #startButton:hover, .button:hover{
+	
+	cursor: pointer;
+	
+}
+
+.hover{color: #868686;}
+
+.bold{
+	
+	font-weight: bold;
+	
+}
+
+li{
+	
+	padding-top: 2px;
+	padding-bottom: 3px;
+	
+}
